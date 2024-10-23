@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "declaration": true,
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "rootDir": "src",
+
+    "paths": {
+      "features/*": ["./src/features/*", "./src/features"],
+      "middleware/*": ["./src/middleware/*", "./src/middleware"],
+      "models/*": ["./src/models/*", "./src/models"],
+      "repositories/*": ["./src/repositories/*", "./src/repositories"],
+      "routers/*": ["./src/routers/*", "./src/routers"],
+      "validation/*": ["./src/validation/*", "./src/validation"]
+    },
+
+    "types": ["vitest/globals"],
+
+    "strict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "forceConsistentCasingInFileNames": true,
+
+    "skipLibCheck": true,
+  },
+  "include": ["src/**/*"],
+  "exclude": ["**/*.test.ts"]
+}
